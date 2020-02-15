@@ -7,8 +7,8 @@
  * @since    1.0.0
  * @version  1.0.0
  */
-var Comment = Function.inherits('Model', function BlogPostCommentModel(conduit, options) {
-	BlogPostCommentModel.super.call(this, conduit, options);
+var Comment = Function.inherits('Alchemy.Model', function BlogPostComment(conduit, options) {
+	BlogPostComment.super.call(this, conduit, options);
 });
 
 /**

@@ -7,8 +7,8 @@
  * @since    1.0.0
  * @version  1.0.0
  */
-var Tag = Function.inherits('Model', function TagModel(conduit, options) {
-	TagModel.super.call(this, conduit, options);
+var Tag = Function.inherits('Alchemy.Model', function Tag(conduit, options) {
+	Tag.super.call(this, conduit, options);
 });
 
 /**
