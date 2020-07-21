@@ -35,6 +35,9 @@ Comment.constitute(function addFields() {
 	this.addField('body', 'Text');
 	this.addField('time_on_page', 'Number');
 
+	// Possible language
+	this.addField('language', 'String');
+
 	// Ip address
 	this.addField('ip', 'String');
 
@@ -54,10 +57,7 @@ Comment.constitute(function addFields() {
 	this.addField('spam', 'Boolean');
 
 	// Validation rules
-	this.addRule('name', 'notEmpty');
-	// this.addRule('email', 'email');
-	// this.addRule('website', 'URL');
-	this.addRule('body', 'notEmpty');
+	this.addRule('NotEmpty', ['name', 'body']);
 });
 
 /**
