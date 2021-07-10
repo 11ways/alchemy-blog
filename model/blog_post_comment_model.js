@@ -12,6 +12,15 @@ var Comment = Function.inherits('Alchemy.Model', function BlogPostComment(condui
 });
 
 /**
+ * The default sort options
+ *
+ * @type {Object}
+ */
+Comment.setProperty(function sort() {
+	return {created: -1};
+});
+
+/**
  * Constitute the class wide schema
  *
  * @author   Jelle De Loecker   <jelle@develry.be>
@@ -79,6 +88,7 @@ Comment.constitute(function chimeraConfig() {
 	// Get the list group
 	list = this.chimera.getActionFields('list');
 
+	list.addField('created');
 	list.addField('user_id');
 	list.addField('name');
 	list.addField('email');
@@ -88,6 +98,7 @@ Comment.constitute(function chimeraConfig() {
 	// Get the edit group
 	edit = this.chimera.getActionFields('edit');
 
+	edit.addField('created');
 	edit.addField('user_id');
 	edit.addField('name');
 	edit.addField('email');

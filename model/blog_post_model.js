@@ -97,10 +97,11 @@ Blog.constitute(function chimeraConfig() {
 		list.addField('language');
 	}
 
+	list.addField('created');
+	list.addField('publish_date');
 	list.addField('author_id');
 	list.addField('title');
 	list.addField('online');
-	list.addField('publish_date');
 	list.addField('tag_id');
 
 	// Get the edit group
